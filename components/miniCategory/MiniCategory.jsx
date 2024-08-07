@@ -59,10 +59,10 @@ const MiniCategory = () => {
                     }}
                 >
                     {
-                        categories.map(category => {
+                        categories.map((category, index) => {
                             const { name, desc } = category
                             return (
-                                <div className='bg-white rounded-xl px-5 py-5  flex flex-col gap-5 justify-center h-[250px]'>
+                                <div key={index} className='bg-white rounded-xl px-5 py-5  flex flex-col gap-5 justify-center h-[250px]'>
                                     <h1 className='text-[18px] mt-10 font-medium text-[#3b3b3b]'>{name}</h1>
                                     <div className='flex justify-between'>
                                         <p>{desc}</p>

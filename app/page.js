@@ -1,6 +1,5 @@
 "use client"
 import FeaturedJobs from "@/components/featuredJobs/FeaturedJobs";
-import Menus from "@/components/menus/Menus";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import MiniCategory from "@/components/miniCategory/MiniCategory";

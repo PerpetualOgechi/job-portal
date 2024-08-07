@@ -2,119 +2,10 @@ import React from 'react'
 import { jobType } from './constants/Constants'
 import Link from 'next/link'
 import "./Jobs.css"
+import { categories } from './constants/JobConstants'
 
 const Jobs = () => {
-    const categories = [
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Senior Graphic Designer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
-
-        },
-
-    ]
     return (
         <div className='pt-36 pb-10 px-5 md:px-32 overflow-x-hidden'>
             <div className='flex flex-col px-5 gap-10 '>
@@ -152,10 +43,10 @@ const Jobs = () => {
 
                             <div className='flex flex-col gap-5'>
                                 {
-                                    jobType.map(type => {
+                                    jobType.map((type, index) => {
                                         const { name, value } = type
                                         return (
-                                            <div className='flex gap-5'>
+                                            <div key={index} className='flex gap-5'>
                                                 {/* <option className='bg-none' value={value}>{name}</option> */}
                                                 <input type="checkbox" />
                                                 <label htmlFor="">{name}</label>
@@ -174,10 +65,10 @@ const Jobs = () => {
 
                             <div className='flex flex-col gap-5'>
                                 {
-                                    jobType.map(type => {
+                                    jobType.map((type, index) => {
                                         const { name, value } = type
                                         return (
-                                            <div className='flex gap-5'>
+                                            <div key={index} className='flex gap-5'>
                                                 {/* <option className='bg-none' value={value}>{name}</option> */}
                                                 <input type="checkbox" />
                                                 <label htmlFor="">{name}</label>
@@ -197,10 +88,10 @@ const Jobs = () => {
 
                         <div className='flex flex-col gap-5'>
                             {
-                                jobType.map(type => {
+                                jobType.map((type, index) => {
                                     const { name, value } = type
                                     return (
-                                        <div className='flex gap-5'>
+                                        <div key={index} className='flex gap-5'>
                                             {/* <option className='bg-none' value={value}>{name}</option> */}
                                             <input type="checkbox" />
                                             <label htmlFor="">{name}</label>
@@ -219,7 +110,7 @@ const Jobs = () => {
 
                         <div className='flex flex-col gap-5'>
                             {
-                                jobType.map(type => {
+                                jobType.map((type, index) => {
                                     const { name, value } = type
                                     return (
                                         <div className='flex gap-5'>
@@ -249,10 +140,10 @@ const Jobs = () => {
 
                     >
                         {
-                            categories.map(category => {
+                            categories.map((category, index) => {
                                 const { companyName, type, title, location, nrs, desc } = category
                                 return (
-                                    <Link href="" className='bg-white rounded-xl py-5 px-5 flex flex-col gap-5 justify-center border-2 border-black job'>
+                                    <Link key={index} href="" className='bg-white rounded-xl py-5 px-5 flex flex-col gap-5 justify-center border-2 border-black job'>
                                         <div className='md:flex gap-5 '>
                                             <div className=''>
                                                 <img src="grey-dot.svg" alt="" />

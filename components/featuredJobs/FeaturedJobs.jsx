@@ -136,10 +136,10 @@ const FeaturedJobs = ({ title }) => {
                 }}
             >
                 {
-                    categories.map(category => {
+                    categories.map((category, index) => {
                         const { companyName, type, title, location, nrs, desc } = category
                         return (
-                            <div className='bg-white rounded-xl shadow-md py-5 px-5 flex flex-col gap-5 justify-center '>
+                            <div key={index} className='bg-white rounded-xl shadow-md py-5 px-5 flex flex-col gap-5 justify-center '>
                                 <div className='flex gap-5 items-center'>
                                     <img src="dot.svg" alt="" />
                                     <div>
