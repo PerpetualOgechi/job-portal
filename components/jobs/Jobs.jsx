@@ -8,7 +8,7 @@ const Jobs = () => {
         {
             companyName: "Foodmandu",
             location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
+            title: "Senior Graphic Designer",
             type: "Fulltime",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
             nrs: 25000,
