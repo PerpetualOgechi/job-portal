@@ -113,7 +113,7 @@ const Jobs = () => {
                                 jobType.map((type, index) => {
                                     const { name, value } = type
                                     return (
-                                        <div className='flex gap-5'>
+                                        <div key={index} className='flex gap-5'>
                                             {/* <option className='bg-none' value={value}>{name}</option> */}
                                             <input type="checkbox" />
                                             <label htmlFor="">{name}</label>
