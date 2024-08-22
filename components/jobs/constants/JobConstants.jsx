@@ -2,7 +2,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Senior Graphic Designer",
@@ -15,7 +15,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -28,7 +28,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -41,7 +41,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -54,7 +54,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -67,7 +67,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -80,7 +80,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -94,7 +94,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -107,7 +107,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -120,7 +120,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -134,7 +134,7 @@ export const categories = [
     {
         companyName: "Foodmandu",
         companyService: "Food Delivery Service",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
@@ -152,7 +152,7 @@ export const categories = [
         jobType: ": Full time",
         offeredSalary: ": $500/month (negotiable)",
         deadline: ": 11th Sept, 2022",
-        image: "image-13.png",
+        image: "company-logo.png",
         location: "Kathmandu, Nepal",
         totalJobs: "33+ jobs",
         title: "Frontend Developer",
