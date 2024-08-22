@@ -5,3 +5,6 @@
     right: 0;
     z-index: 200;
 }
+.nav{
+    z-index: 300;
+}

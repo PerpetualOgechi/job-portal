@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='flex flex-col-reverse gap-5 justify-between items-center pt-36 px-5 md:px-36 pb-20 md:flex-row overflow-x-hidden'>
+        <div className='flex flex-col-reverse gap-5 justify-between items-center pt-36 px-5 md:px-36 pb-20 md:flex-row overflow-x-hidden relative'>
             <div className='w-full flex flex-col items-center md:w-[50%]'>
                 <h1 className='font-[600] text-[50px] md:text-[50px]'>
                     <span className=''>Your Dream</span><br />

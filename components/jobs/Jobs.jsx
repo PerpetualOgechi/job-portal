@@ -141,9 +141,9 @@ const Jobs = () => {
                     >
                         {
                             categories.map((category, index) => {
-                                const { companyName, type, title, location, nrs, desc } = category
+                                const { companyName, type, title, location, nrs, desc, id } = category
                                 return (
-                                    <Link key={index} href="" className='bg-white rounded-xl py-5 px-5 flex flex-col gap-5 justify-center border-2 border-black job'>
+                                    <Link key={index} href={`jobs/${id}`} className='bg-white rounded-xl py-5 px-5 flex flex-col gap-5 justify-center border-2 border-black job'>
                                         <div className='md:flex gap-5 '>
                                             <div className=''>
                                                 <img src="grey-dot.svg" alt="" />
@@ -156,7 +156,7 @@ const Jobs = () => {
 
 
                                                         <div className='flex flex-col justify-center items-center'>
-                                                            <img src="Bookmark border.svg" sizes={10} alt="" />
+                                                            <img src="bookmark-border.svg" sizes={10} alt="" />
                                                             <p>save</p>
                                                         </div>
                                                     </div>
