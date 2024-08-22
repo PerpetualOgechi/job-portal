@@ -1,118 +1,119 @@
 import Link from 'next/link'
 import React from 'react'
+import { categories } from '../jobs/constants/JobConstants'
 
 const FeaturedJobs = ({ title }) => {
-    const categories = [
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    // const categories = [
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
-        {
-            companyName: "Foodmandu",
-            location: "Kathmandu, Nepal",
-            title: "Frontend Developer",
-            type: "Fulltime",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
-            nrs: 25000,
+    //     },
+    //     {
+    //         companyName: "Foodmandu",
+    //         location: "Kathmandu, Nepal",
+    //         title: "Frontend Developer",
+    //         type: "Fulltime",
+    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.",
+    //         nrs: 25000,
 
-        },
+    //     },
 
-    ]
+    // ]
     return (
         <div className='bg-[#D9D9D9] py-10 pt-36 md:px-36 overflow-x-hidden'>
             <div className='flex flex-col justify-between md:flex-row'>
@@ -137,9 +138,9 @@ const FeaturedJobs = ({ title }) => {
             >
                 {
                     categories.map((category, index) => {
-                        const { companyName, type, title, location, nrs, desc } = category
+                        const { companyName, type, title, location, nrs, desc, id } = category
                         return (
-                            <div key={index} className='bg-white rounded-xl shadow-md py-5 px-5 flex flex-col gap-5 justify-center '>
+                            <Link href={`jobs/${id}`} key={index} className='bg-white rounded-xl shadow-md py-5 px-5 flex flex-col gap-5 justify-center '>
                                 <div className='flex gap-5 items-center'>
                                     <img src="dot.svg" alt="" />
                                     <div>
@@ -161,7 +162,7 @@ const FeaturedJobs = ({ title }) => {
                                         <Link href="" className='text-[#10B981]'>Apply Now</Link>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         )
                     })
                 }

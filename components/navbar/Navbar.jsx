@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className="container flex  justify-between items-center relative">
                     <div className='flex gap-36 items-center'>
                         <div className='flex  gap-5 items-center'>
-                            <img src="logo.png" alt="" className='w-[50px]' />
+                            <img src="/logo.png" alt="" className='w-[50px]' />
                             <h2 className='text-[40px]  font-bold'>Kreate</h2>
                         </div>
                         <div className='hidden md:flex gap-10 items-center'>

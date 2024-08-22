@@ -1,4 +1,5 @@
 "use client"
+import Footer from '@/components/footer/Footer'
 import JobDetails from '@/components/jobDetails/JobDetails'
 import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
@@ -9,6 +10,7 @@ const page = () => {
     <div>
       <Navbar />
       <JobDetails />
+      <Footer />
     </div>
   )
 }
