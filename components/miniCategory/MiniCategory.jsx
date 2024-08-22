@@ -83,7 +83,7 @@ const MiniCategory = () => {
                     }
 
                 </div>
-                <div className='bg-white w-full justify-between items-center rounded-md  py-10 pl-10  md:flex pr-36'>
+                <div className='hidden bg-white w-full justify-between items-center rounded-md  py-10 pl-10  md:flex pr-36'>
                     <div>
                         <h1 className='font-medium text-center text-[30px] sb:text-[44px]'>Get <span className='text-[#10B981]'>Job Alart</span> ?</h1>
                     </div>
