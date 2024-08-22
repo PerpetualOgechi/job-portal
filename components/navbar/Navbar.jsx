@@ -43,10 +43,9 @@ const Navbar = () => {
 
                         </OutsideClickHandler>
 
-
                     }
 
-                    <div className="lg:hidden">
+                    <div className="md:hidden">
                         <button onClick={toggleNavLinks}><BiMenuAltRight size={30} /></button>
                     </div>
 
