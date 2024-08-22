@@ -29,7 +29,7 @@ const Footer = () => {
                             about?.map(Item => {
                                 const { name } = Item
                                 return (
-                                    <Link href={""}>
+                                    <Link href={""} key={name}>
                                         <h1>{name}</h1>
                                     </Link>
                                 )
@@ -42,7 +42,7 @@ const Footer = () => {
                             services?.map(Item => {
                                 const { name } = Item
                                 return (
-                                    <Link href={""}>
+                                    <Link href={""} key={name}>
                                         <h1>{name}</h1>
                                     </Link>
                                 )
@@ -55,7 +55,7 @@ const Footer = () => {
                             socials?.map(Item => {
                                 const { name } = Item
                                 return (
-                                    <Link href={""}>
+                                    <Link href={""} key={name}>
                                         <h1>{name}</h1>
                                     </Link>
                                 )
@@ -68,7 +68,7 @@ const Footer = () => {
                             locations?.map(Item => {
                                 const { name } = Item
                                 return (
-                                    <Link href={""}>
+                                    <Link href={""} key={name}>
                                         <h1>{name}</h1>
                                     </Link>
                                 )
