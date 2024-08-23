@@ -67,7 +67,7 @@ const JobDetails = (context) => {
 
                 </Link>
                 <div className='flex flex-col rounded-xl py-5 px-5  gap-3 border-2 border-[#60EEBF]'>
-                    <h1 className='text-[48px] font-medium text-[#333333]'>{data.title}</h1>
+                    <h1 className='text-[30px]  md:text-[48px] font-medium text-[#333333]'>{data.title}</h1>
                     <p>Basic Job Information</p>
                     <div className='flex flex-col gap-3'>
                         <h1 className='flex gap-12'><span className='font-bold '>Job category </span><span>: IT(Software)</span></h1>
@@ -81,13 +81,13 @@ const JobDetails = (context) => {
                 </div>
                 <div className='flex flex-col rounded-xl py-5 px-5  gap-5 border-2 border-[#60EEBF]'>
                     <div>
-                        <h1 className='text-[48px] font-medium text-[#333333]'>Job description:</h1>
+                        <h1 className='text-[30px]  md:text-[48px] font-medium text-[#333333]'>Job description:</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Consequat nunc ac a magna at elementum. Cras arcu varius in aliquam habitant
                             fermentum. Mi sit lorem mollis vitae quis curabitur vestibulum.</p>
                     </div>
                     <div>
-                        <h1 className='text-[48px] font-medium text-[#333333]'>Requirements:</h1>
+                        <h1 className='text-[30px]  md:text-[48px] font-medium text-[#333333]'>Requirements:</h1>
                         <ol>
                             <li>1. 1/2 years experience</li>
                             <li>2. Academic: Bachelor/High School</li>
@@ -99,7 +99,7 @@ const JobDetails = (context) => {
                         </ol>
                     </div>
                     <div>
-                        <h1 className='text-[48px] font-medium text-[#333333]'>Other skills</h1>
+                        <h1 className='text-[30px] md:text-[48px] font-medium text-[#333333]'>Other skills</h1>
                         <ol>
                             <li>1. Communication kills</li>
                             <li>2. +ve attitude</li>
@@ -118,7 +118,7 @@ const JobDetails = (context) => {
             </div>
             <div className='flex flex-col gap-10 w-full md:w-[40%]'>
                 <div className='flex flex-col gap-5'>
-                    <h1 className='text-[32px] font-medium text-[#333333]'>About Company</h1>
+                    <h1 className='text-[25px] md:text-[32px] font-medium text-[#333333]'>About Company</h1>
                     <p className='flex flex-col'><span>Foodmandu is the fastest, easiest and most convenient way to enjoy the best food of your favourite restaurants at home,
                         at the office or wherever you want to.</span><br />
 
@@ -128,11 +128,11 @@ const JobDetails = (context) => {
                     <Link href={""} className='text-[#10B981]'>Learn more</Link>
                 </div>
                 <div className='flex flex-col gap-5'>
-                    <h1 className='text-[32px] font-medium text-[#333333]'>Our Location</h1>
+                    <h1 className='text-[25px] md:text-[32px] font-medium text-[#333333]'>Our Location</h1>
                     <img src="/location.svg" alt="" />
                 </div>
                 <div className='flex flex-col gap-5'>
-                    <h1 className='text-[32px] font-medium text-[#333333]'>Refer to a friend</h1>
+                    <h1 className='text-[25px] md:text-[32px] font-medium text-[#333333]'>Refer to a friend</h1>
                     <div className='flex gap-10'>
                         <img src="/facebook.svg" alt="" />
                         <img src="/linkedin.svg" alt="" />
@@ -141,14 +141,14 @@ const JobDetails = (context) => {
                     </div>
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <h1 className='text-[32px] font-medium text-[#333333]'>Copy job URL link</h1>
+                    <h1 className='text-[25px] md:text-[32px] font-medium text-[#333333]'>Copy job URL link</h1>
                     <div>
                         <input type="text" placeholder='https://www.kreate.com/job-apply-325...' className='border border-[#10B981]  py-[5px] px-2' />
                         <button className='bg-[#10B981] text-white py-[6px] px-2'>Copy link</button>
                     </div>
                 </div>
                 <div className='hidden md:flex flex-col gap-2 '>
-                    <h1 className='text-[32px] font-medium text-[#333333]'>Recent Jobs</h1>
+                    <h1 className='text-[25px] md:text-[32px] font-medium text-[#333333]'>Recent Jobs</h1>
                     <div className='flex flex-col rounded-xl py-5 px-5  gap-5 border-2 border-[#60EEBF]'>
                         <div className='bg-[#60EEBF] w-full h-[70px] rounded-xl'></div>
                         <div className='bg-[#D9D9D9] w-full h-[70px] rounded-xl'></div>

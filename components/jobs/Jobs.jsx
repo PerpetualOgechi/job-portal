@@ -8,9 +8,9 @@ const Jobs = () => {
 
     return (
         <div className='pt-36 pb-10 px-5 md:px-32 overflow-x-hidden'>
-            <div className='flex flex-col px-5 gap-10 '>
+            <div className='flex flex-col md:px-5 gap-10 '>
                 <h1 className='font-medium text-[25px] text-center sb:text-[40px]'>Discover More than <span className='text-[#10B981]'>5000+ Jobs</span></h1>
-                <div className='px-16 flex flex-col'>
+                <div className='md:px-16 flex flex-col'>
                     <div className='flex flex-col items-center pb-5 gap-5 sb:flex-row justify-between w-full '>
                         <div className='border-4 px-5 flex text-center py-1.5 border-black rounded-2xl'>
                             <img src="dark-search-icon.svg" sizes={20} alt="" />
@@ -35,7 +35,7 @@ const Jobs = () => {
             <div className='flex flex-col-reverse md:flex-row pt-20'>
                 <div className='w-full md:w-[30%] md:flex md:flex-col gap-10'
                 >
-                    <div className='flex justify-between md:flex-col'>
+                    <div className='flex justify-between md:flex-col pb-5 md:pb-0'>
                         <div className='flex flex-col gap-5' >
                             <label htmlFor=""
                                 className='font-bold text-[20px]'
@@ -81,53 +81,55 @@ const Jobs = () => {
 
                         </div>
                     </div>
-                    <div className='flex flex-col gap-5' >
-                        <label htmlFor=""
-                            className='font-bold text-[20px]'
-                        >Job Level</label>
+                    <div className='flex justify-between md:flex-col'>
+                        <div className='flex flex-col gap-5' >
+                            <label htmlFor=""
+                                className='font-bold text-[20px]'
+                            >Job Level</label>
 
-                        <div className='flex flex-col gap-5'>
-                            {
-                                jobType.map((type, index) => {
-                                    const { name, value } = type
-                                    return (
-                                        <div key={index} className='flex gap-5'>
-                                            {/* <option className='bg-none' value={value}>{name}</option> */}
-                                            <input type="checkbox" />
-                                            <label htmlFor="">{name}</label>
-                                        </div>
+                            <div className='flex flex-col gap-5'>
+                                {
+                                    jobType.map((type, index) => {
+                                        const { name, value } = type
+                                        return (
+                                            <div key={index} className='flex gap-5'>
+                                                {/* <option className='bg-none' value={value}>{name}</option> */}
+                                                <input type="checkbox" />
+                                                <label htmlFor="">{name}</label>
+                                            </div>
 
-                                    )
-                                })
-                            }
+                                        )
+                                    })
+                                }
+                            </div>
+
                         </div>
+                        <div className='flex flex-col gap-5' >
+                            <label htmlFor=""
+                                className='font-bold text-[20px]'
+                            >Salary Range</label>
 
-                    </div>
-                    <div className='flex flex-col gap-5' >
-                        <label htmlFor=""
-                            className='font-bold text-[20px]'
-                        >Salary Range</label>
+                            <div className='flex flex-col gap-5'>
+                                {
+                                    jobType.map((type, index) => {
+                                        const { name, value } = type
+                                        return (
+                                            <div key={index} className='flex gap-5'>
+                                                {/* <option className='bg-none' value={value}>{name}</option> */}
+                                                <input type="checkbox" />
+                                                <label htmlFor="">{name}</label>
+                                            </div>
 
-                        <div className='flex flex-col gap-5'>
-                            {
-                                jobType.map((type, index) => {
-                                    const { name, value } = type
-                                    return (
-                                        <div key={index} className='flex gap-5'>
-                                            {/* <option className='bg-none' value={value}>{name}</option> */}
-                                            <input type="checkbox" />
-                                            <label htmlFor="">{name}</label>
-                                        </div>
+                                        )
+                                    })
+                                }
+                            </div>
 
-                                    )
-                                })
-                            }
                         </div>
-
                     </div>
                 </div>
-                <div className='w-full md:flex-1'>
-                    <div className='flex justify-between p-5'>
+                <div className='w-full pb-10 md:flex-1'>
+                    <div className='flex justify-between  py-5 md:px-5'>
                         <div>
                             <h1>All Jobs</h1>
                             <p>Showing 22 results</p>
@@ -136,7 +138,7 @@ const Jobs = () => {
                             <h1>Sort by: <span>Most relevant</span></h1>
                         </div>
                     </div>
-                    <div className='px-5 flex flex-col gap-5'
+                    <div className='md:px-5 flex flex-col gap-5'
 
                     >
                         {
@@ -176,7 +178,7 @@ const Jobs = () => {
 
 
 
-                                                    <Link href="" className='bg-[#10B981] text-[#fff] py-3 px-10 rounded-xl'>Apply Now</Link>
+                                                    <Link key={index} href={`applications/${id}`} className='bg-[#10B981] text-[#fff] py-3 px-10 rounded-xl'>Apply Now</Link>
 
                                                 </div>
 

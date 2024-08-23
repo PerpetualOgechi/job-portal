@@ -115,7 +115,7 @@ const FeaturedJobs = ({ title }) => {
 
     // ]
     return (
-        <div className='bg-[#D9D9D9] py-10 pt-36 md:px-36 overflow-x-hidden'>
+        <div className='bg-[#D9D9D9] py-10 pt-10 px-5 md:px-36 overflow-x-hidden'>
             <div className='flex flex-col justify-between md:flex-row'>
                 <h1 className='font-bold text-[35px]'>{title}
                     <span className='text-[#10B981]'> Jobs</span>
@@ -126,7 +126,7 @@ const FeaturedJobs = ({ title }) => {
                 </div>
             </div>
 
-            <div className='px-5 '
+            <div className='md:px-5 '
                 style={{
                     display: "grid",
                     gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
