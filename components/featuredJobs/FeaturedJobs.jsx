@@ -159,7 +159,7 @@ const FeaturedJobs = ({ title }) => {
                                     </div>
                                     <div className='flex font-medium text-[20px] justify-between'>
                                         <h2>NRs: {nrs}</h2>
-                                        <Link href="" className='text-[#10B981]'>Apply Now</Link>
+                                        <Link href={`applications/${id}`} className='text-[#10B981]'>Apply Now</Link>
                                     </div>
                                 </div>
                             </Link>

@@ -58,7 +58,7 @@ const JobDetails = (context) => {
 
 
 
-                                <Link href="" className='bg-[#10B981] text-[#fff] py-3 px-10 rounded-xl'>Apply Now</Link>
+                                <Link href={`/applications/${id}`} className='bg-[#10B981] text-[#fff] py-3 px-10 rounded-xl'>Apply Now</Link>
 
                             </div>
 
@@ -111,7 +111,7 @@ const JobDetails = (context) => {
                         </ol>
                     </div>
                     <div className='flex gap-10'>
-                        <button className='bg-[#10B981] text-[#fff] py-3 px-10 rounded-xl'>Apply Now</button>
+                        <Link href={`/applications/${id}`} className='bg-[#10B981] text-[#fff] py-3 px-10 rounded-xl'>Apply Now</Link>
                         <button className='bg-[#e42121] text-[#fff] py-3 px-10 rounded-xl'>Apply Later</button>
                     </div>
                 </div>
