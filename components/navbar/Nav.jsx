@@ -7,7 +7,7 @@ const Nav = ({ toggleNavLinks }) => {
 
             <Link href="/" onClick={toggleNavLinks}>Home</Link>
             <Link href={"/jobs"} onClick={toggleNavLinks}>Find Jobs</Link>
-            <Link href={""} onClick={toggleNavLinks}>Post Jobs</Link>
+            <Link href={"/savedJobs"} onClick={toggleNavLinks}>Saved Jobs</Link>
             <Link href={""} onClick={toggleNavLinks}>Login</Link>
             <Link href={""} onClick={toggleNavLinks} className='bg-[#10B981] text-[24px] rounded-xl py-2 px-8 text-white'>Sign Up</Link>
 

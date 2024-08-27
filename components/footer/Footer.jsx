@@ -2,6 +2,7 @@ import React from 'react'
 import { about, locations, services, socials } from './FooterConstants'
 import Link from 'next/link'
 
+
 const Footer = () => {
     return (
 
@@ -10,7 +11,7 @@ const Footer = () => {
                 <div className='hidden md:w-[25%] md:flex gap-3'>
                     {/* <Link href="/"> */}
                     <img src="/logo.png" alt="" className='w-[50px] h-[50px]' />
-                    <h2 className='text-[40px]  font-bold'>Kreate</h2>
+                    <h2 className='text-[40px]  font-bold'>StanPay</h2>
                     {/* </Link> */}
                 </div>
                 <div className=' flex-1 text-center  lg:text-left'

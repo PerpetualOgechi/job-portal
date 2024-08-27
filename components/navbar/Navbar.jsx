@@ -17,13 +17,14 @@ const Navbar = () => {
                 <div className="container flex  justify-between items-center relative">
                     <div className='flex gap-36 items-center'>
                         <div className='flex  gap-5 items-center'>
-                            <img src="/logo.png" alt="" className='w-[50px]' />
-                            <h2 className='text-[40px]  font-bold'>Kreate</h2>
+                            {/* <img src="/logo.png" alt="" className='w-[50px]' /> */}
+                            <img src="/portal.jpeg" alt="" className='w-[60px]' />
+                            <h2 className='text-[40px]  font-bold'>StanPay</h2>
                         </div>
                         <div className='hidden md:flex gap-10 items-center'>
                             <Link href="/">Home</Link>
                             <Link href={"/jobs"}>Find Jobs</Link>
-                            <Link href={""}>Post Jobs</Link>
+                            <Link href={"/savedJobs"}>Saved Jobs</Link>
                         </div>
                     </div>
                     <div className='hidden md:flex gap-10 items-center'>
