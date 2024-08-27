@@ -19,7 +19,7 @@ const Navbar = () => {
                         <div className='flex  gap-5 items-center'>
                             {/* <img src="/logo.png" alt="" className='w-[50px]' /> */}
                             <img src="/portal.jpeg" alt="" className='w-[60px]' />
-                            <h2 className='text-[40px]  font-bold'>StanPay</h2>
+                            <h2 className='text-[25px] md:text-[40px]  font-bold'>StanPay</h2>
                         </div>
                         <div className='hidden md:flex gap-10 items-center'>
                             <Link href="/">Home</Link>
