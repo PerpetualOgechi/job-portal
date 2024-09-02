@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='flex py-10 gap-10 px-5'>
                 <div className='hidden md:w-[25%] md:flex gap-3'>
                     {/* <Link href="/"> */}
-                    <img src="/logo.png" alt="" className='w-[50px] h-[50px]' />
+                    {/* <img src="/portal.jpeg" alt="" className='w-[50px] h-[50px]' /> */}
                     <h2 className='text-[40px]  font-bold'>StanPay</h2>
                     {/* </Link> */}
                 </div>
