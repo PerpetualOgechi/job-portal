@@ -28,8 +28,8 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='hidden md:flex gap-10 items-center'>
-                        <Link href={""}>Login</Link>
-                        <Link href={""} className='bg-[#10B981] text-[24px] rounded-xl py-2 px-8 text-white'>Sign Up</Link>
+                        <Link href={"/login"}>Login</Link>
+                        <Link href={"/signup"} className='bg-[#10B981] text-[24px] rounded-xl py-2 px-8 text-white'>Sign Up</Link>
                     </div>
 
 

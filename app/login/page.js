@@ -1,6 +1,5 @@
-import FeaturedJobs from '@/components/featuredJobs/FeaturedJobs'
+import Login from '@/components/authentications/Login'
 import Footer from '@/components/footer/Footer'
-import Jobs from '@/components/jobs/Jobs'
 import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
 
@@ -8,9 +7,8 @@ const page = () => {
   return (
     <div>
         <Navbar />
-        <Jobs />
-        <FeaturedJobs title={"Recomended"}/>
-        <Footer />
+        <Login />
+        <Footer/>
     </div>
   )
 }
